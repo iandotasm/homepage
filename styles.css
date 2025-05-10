@@ -132,6 +132,43 @@
   border-color: var(--text-decoration-color);
 }
 
+.hidden-badge {
+  visibility: hidden;
+  position: absolute;
+  transform: translateX(-5%);
+}
+
+.easteregg:hover .hidden-badge {
+  visibility: visible;
+}
+
+
+.easteregg {
+  position: relative;
+  display: flex;
+}
+
+.easteregg .eastereggtext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.easteregg:hover .eastereggtext {
+  visibility: visible;
+}
+
+
 /*intro and skills*/
 .intro {
     display: flex;
