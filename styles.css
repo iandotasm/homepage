@@ -305,3 +305,45 @@
   .additional-info__languages-item {
     color: var(--secondary-text-color);
   }
+
+/*footer*/
+.footer {
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer__icon {
+  fill: #555;
+}
+
+.footer__download-link {
+  color: #0073b1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer__download-link:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
